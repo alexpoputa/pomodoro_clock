@@ -1,9 +1,8 @@
 # Project Title
-Pomodoro Clock
+POMODORO CLOCK
 
 ### About
-
-
+Simple Pomodoro Clock project.
 ### Built With
 HTLM/CSS3/JS and jQuery
 
