@@ -1,0 +1,216 @@
+body {
+    background-image: url(img/a2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fffaf0;
+	font-family: Satisfy;
+}
+
+div{
+	color:#fffaf0;
+	font-family: Satisfy;
+}
+
+#timeDiv {
+	font-family: Satisfy;
+	background-color: black;
+	color: #fffaf0;
+	width: 35%;
+	margin: auto;
+	border-radius: 20rem; /* round corners */
+	font-size: 150%;
+	padding: 3%;
+	background: rgba(0, 0, 0, 0.50); /* makes the background transparent */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    margin-top: 5%;
+}
+
+#mainTitle {
+    font-size: 8rem;
+    margin-top: 5%;
+}
+
+h2 {
+    display: inline;
+}
+
+#add5Clock {
+	background-image: linear-gradient(to right bottom,grey, #fffaf0); 
+	width: 0 auto;
+	border-radius: 50%;
+	border-color: transparent;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    color:black;
+}
+
+#minus5Clock {
+	background-image: linear-gradient(to right bottom,grey, #fffaf0); 
+	width: 0 auto;
+	border-radius: 50%;
+	border-color: transparent;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    color:black;
+}
+
+#add5Break {
+	background-image: linear-gradient(to right bottom,black, #fffaf0); 
+	width: 0 auto;
+	border-radius: 50%;
+	border-color: transparent;
+	color:white;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+#minus5Break {
+	background-image: linear-gradient(to right bottom,black, #fffaf0);  
+	width: 0 auto;
+	border-radius: 50%;
+	border-color: transparent;
+	color:white;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+#title1{
+	color: #fffaf0;
+}
+
+#title2{
+	color: #fffaf0;
+}
+
+/* START BUTTON */
+
+#start{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    /* top and bottom padding */
+    display: inline-block;
+    border-radius: 100px;
+    border-color: transparent;
+    transition: all .2s;
+    /* we want all properties to be animated  + time of animation action */
+    position: relative;
+    color: black;
+}
+
+#start:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+    /* adding shadow to button when hover */
+}
+
+#start:active {
+    /* when we click */
+    transform: translateY(-1px);
+}
+
+#start {
+	margin-top: 2rem;
+    background-image: linear-gradient(to right bottom, #fffaf0, grey);
+    color: #777;
+}
+
+/* AN EFFECT THAT LOOKS LIKE THE DEFAULT BUTTON BUT IT IS PLACE AFTER: don't forget to put position:relative at btn link,visited so this will work */
+
+#start::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* z-index defines the position of an element if its one on another */
+    transition: all .4s;
+}
+
+#start::after {
+    background-image: linear-gradient(to right bottom, #fffaf0, grey);
+}
+
+#start:hover::after {
+    /* only when we have the button on hover , put the properties on after */
+    transform: scaleX(1.4) scaleY(1.6);
+    /* change the scale of the button from behind while hovered */
+    opacity: 0;
+    /* fadding out */
+}
+
+#start {
+    /* we created this class just to animate the button */
+    animation: moveInBottom 2s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+/* RESET BUTTON */
+
+#reset{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    /* top and bottom padding */
+    display: inline-block;
+    border-radius: 100px;
+    border-color: transparent;
+    transition: all .2s;
+    /* we want all properties to be animated  + time of animation action */
+    position: relative;
+    color: black;
+}
+
+#reset:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    /* adding shadow to button when hover */
+}
+
+#reset:active {
+    /* when we click */
+    transform: translateY(-1px);
+}
+
+#reset {
+	margin-top: 2rem;
+    background-image: linear-gradient(to right bottom, #fffaf0, grey);
+    color: #777;
+}
+
+/* AN EFFECT THAT LOOKS LIKE THE DEFAULT BUTTON BUT IT IS PLACE AFTER: don't forget to put position:relative at btn link,visited so this will work */
+
+#reset::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* z-index defines the position of an element if its one on another */
+    transition: all .4s;
+}
+
+#reset::after {
+    background-image: linear-gradient(to right bottom, #fffaf0, grey);
+}
+
+#reset:hover::after {
+    /* only when we have the button on hover , put the properties on after */
+    transform: scaleX(1.4) scaleY(1.6);
+    /* change the scale of the button from behind while hovered */
+    opacity: 0;
+    /* fadding out */
+}
+
+#reset {
+    /* we created this class just to animate the button */
+    animation: moveInBottom 2s ease-out .75s;
+    animation-fill-mode: backwards;
+}
