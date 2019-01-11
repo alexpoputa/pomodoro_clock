@@ -14,3 +14,7 @@ This project is licensed under the MIT License.
 
 ### Acknowledgments
 Many thanks to '360 coding tutorials' channel for the inspiration.
+
+### Project Images
+
+![pomodoro1](https://user-images.githubusercontent.com/33935806/51056399-63f4db80-15eb-11e9-96e9-5f97b49bf429.png)
